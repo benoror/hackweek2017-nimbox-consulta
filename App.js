@@ -1,7 +1,12 @@
 import React from 'react';
 import Swiper from 'react-native-swiper';
-import { StyleSheet, Text, View } from 'react-native';
-import randomcolor from 'randomcolor'
+import { StackNavigator } from 'react-navigation';
+import {
+  View,
+  StyleSheet,
+  Text,
+  Button,
+} from 'react-native';
 
 const styles = StyleSheet.create({
   container: {
@@ -17,58 +22,74 @@ const styles = StyleSheet.create({
   }
 });
 
-class TitleText extends React.Component {
-  render() {
-    return (
-      <Text style={{ fontSize: 48, color: 'white' }}>
-      {this.props.label}
+const viewStyle = () => {
+  return {
+    flex: 1,
+    justifyContent: 'center',
+    alignItems: 'center',
+  }
+};
+
+const Left = ({ navigation }) => (
+  <View>
+    <Text>Left</Text>
+    <Button
+      onPress={() => navigation.navigate('Nested')}
+      title="Ir a ruta anidada"
+    />
+  </View>
+);
+Left.navigationOptions = {
+  title: 'Left Screen',
+};
+
+const Nested = ({ navigation }) => (
+  <View>
+    <Text>Screen anidado</Text>
+  </View>
+)
+Nested.navigationOptions = {
+  title: 'Screen anidado',
+};
+
+const LeftScreen = StackNavigator({
+  Left: { screen: Left },
+  Nested: { screen: Nested },
+});
+
+const Home = () => (
+  <Swiper
+  loop={false}
+  showsPagination={false}
+  index={1}>
+    <LeftScreen />
+    <Swiper
+    horizontal={false}
+    loop={false}
+    showsPagination={false}
+    index={1}>
+      <View style={viewStyle()}>
+        <Text>
+          Top
+        </Text>
+      </View>
+      <View style={viewStyle()}>
+        <Text>
+          Home
+        </Text>
+      </View>
+      <View style={viewStyle()}>
+        <Text>
+          Bottom
+        </Text>
+      </View>
+    </Swiper>
+    <View style={viewStyle()}>
+      <Text>
+        Right
       </Text>
-    )
-  }
-}
+    </View>
+  </Swiper>
+);
 
-class Home extends React.Component {
-
-  viewStyle() {
-    return {
-      flex: 1,
-      backgroundColor: randomcolor(),
-      justifyContent: 'center',
-      alignItems: 'center',
-    }
-  }
-
-  render() {
-    return (
-      <Swiper
-      loop={false}
-      showsPagination={false}
-      index={1}>
-      <View style={this.viewStyle()}>
-      <TitleText label="Left" />
-      </View>
-      <Swiper
-      horizontal={false}
-      loop={false}
-      showsPagination={false}
-      index={1}>
-      <View style={this.viewStyle()}>
-      <TitleText label="Top" />
-      </View>
-      <View style={this.viewStyle()}>
-      <TitleText label="Home" />
-      </View>
-      <View style={this.viewStyle()}>
-      <TitleText label="Bottom" />
-      </View>
-      </Swiper>        
-      <View style={this.viewStyle()}>
-      <TitleText label="Right" />
-      </View>
-      </Swiper>
-
-    )
-  }
-}
-
-export default Home
+export default Home;
