@@ -396,6 +396,43 @@ const Home = () => (
                                               <Image source={require('./assets/img/19.png')}/>
                                             </View>
 
+                                            {/*--------------- 21 view */}
+                                            <Swiper
+                                              loop={false}
+                                              showsPagination={false}
+                                              index={0}>
+                                              <View>
+                                                <MainTitle subtitle='INSTRUCCIONES MÉDICAS'/>
+                                                <Image source={require('./assets/img/20.png')}/>
+                                              </View>
+
+                                              {/*--------------- 22 view */}
+                                              <Swiper
+                                                loop={false}
+                                                showsPagination={false}
+                                                index={0}>
+                                                <View>
+                                                  <MainTitle subtitle='INSTRUCCIONES MÉDICAS'/>
+                                                  <Image source={require('./assets/img/21.png')}/>
+                                                  <BottomSheet title='PLANTILLAS'/>
+                                                </View>
+
+                                                {/*--------------- 23 view */}
+                                                <Swiper
+                                                  loop={false}
+                                                  showsPagination={false}
+                                                  index={0}>
+                                                  <View>
+                                                    <MainTitle subtitle='RESUMEN DE CONSULTA'/>
+                                                    <Image source={require('./assets/img/22.png')}/>
+                                                  </View>
+
+                                                </Swiper>
+
+                                              </Swiper>
+
+                                            </Swiper>
+
                                           </Swiper>
 
                                         </Swiper>
