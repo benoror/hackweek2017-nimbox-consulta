@@ -178,11 +178,265 @@ class BottomSheet extends React.Component {
 
 
 const Home = () => (
-  <View>
-    <MainTitle subtitle='Razón de la visita'/>
-    <Image source={require('./assets/img/0.png')}/>
-    <BottomSheet title='PLANTILLAS'/>
-  </View>
+  <Swiper
+    loop={false}
+    showsPagination={false}
+    index={0}>
+
+    <View>
+      <MainTitle subtitle='RAZÓN DE LA VISITA'/>
+      <Image source={require('./assets/img/0.png')}/>
+      <BottomSheet title='PLANTILLAS'/>
+    </View>
+
+    {/*--------------- 1 view */}
+    <Swiper
+      loop={false}
+      showsPagination={false}
+      index={0}>
+      <View>
+        <MainTitle subtitle='SÍNTOMAS SUBJETIVOS'/>
+        <Image source={require('./assets/img/0.png')}/>
+        <BottomSheet title='PLANTILLAS'/>
+      </View>
+
+      {/*--------------- 2 view */}
+      <Swiper
+        loop={false}
+        showsPagination={false}
+        index={0}>
+        <View>
+          <Image source={require('./assets/img/1.png')}/>
+        </View>
+
+        {/*--------------- 3 view */}
+        <Swiper
+          loop={false}
+          showsPagination={false}
+          index={0}>
+          <View>
+            <MainTitle subtitle='SÍNTOMAS SUBJETIVOS'/>
+            <Image source={require('./assets/img/2.png')}/>
+            <BottomSheet title='PLANTILLAS'/>
+          </View>
+
+          {/*--------------- 4 view */}
+          <Swiper
+            horizontal={true}
+            loop={false}
+            showsPagination={false}
+            index={0}>
+            <View>
+              <MainTitle subtitle='SÍNTOMAS SUBJETIVOS'/>
+              <Image source={require('./assets/img/3.png')}/>
+              <BottomSheet title='PLANTILLAS'/>
+            </View>
+
+            {/*--------------- 5 view */}
+            <Swiper
+              horizontal={false}
+              loop={false}
+              showsPagination={false}
+              index={0}>
+              <View>
+                <MainTitle subtitle='SIGNOS VITALES'/>
+                <Image source={require('./assets/img/4.png')}/>
+              </View>
+
+              {/*--------------- 6 view */}
+              <Swiper
+                horizontal={false}
+                loop={false}
+                showsPagination={false}
+                index={0}>
+                <View>
+                  <MainTitle subtitle='SIGNOS VITALES'/>
+                  <Image source={require('./assets/img/5.png')}/>
+                </View>
+
+                {/*--------------- 7 view */}
+                <Swiper
+                  loop={false}
+                  showsPagination={false}
+                  index={0}>
+                  <View>
+                    <MainTitle subtitle='SIGNOS VITALES'/>
+                    <Image source={require('./assets/img/6.png')}/>
+                  </View>
+
+                  {/*--------------- 8 view */}
+                  <Swiper
+                    horizontal={true}
+                    loop={false}
+                    showsPagination={false}
+                    index={0}>
+                    <View>
+                      <MainTitle subtitle='EXAMEN FÍSICO'/>
+                      <Image source={require('./assets/img/7.png')}/>
+                    </View>
+
+                    {/*--------------- 9 view */}
+                    <Swiper
+                      loop={false}
+                      showsPagination={false}
+                      index={0}>
+                      <View>
+                        <MainTitle subtitle='EXAMEN FÍSICO'/>
+                        <Image source={require('./assets/img/8.png')}/>
+                      </View>
+
+                      {/*--------------- 10 view */}
+                      <Swiper
+                        loop={false}
+                        showsPagination={false}
+                        index={0}>
+                        <View>
+                          <MainTitle subtitle='EXAMEN FÍSICO'/>
+                          <Image source={require('./assets/img/9.png')}/>
+                          <BottomSheet title='PLANTILLAS'/>
+                        </View>
+
+                        {/*--------------- 11 view */}
+                        <Swiper
+                          loop={false}
+                          showsPagination={false}
+                          index={0}>
+                          <View>
+                            <MainTitle subtitle='EXAMEN FÍSICO'/>
+                            <Image source={require('./assets/img/10.png')}/>
+                          </View>
+
+                          {/*--------------- 12 view */}
+                          <Swiper
+                            loop={false}
+                            showsPagination={false}
+                            index={0}>
+                            <View>
+                              <MainTitle subtitle='DIAGNÓSTICO'/>
+                              <Image source={require('./assets/img/11.png')}/>
+                            </View>
+
+                            {/*--------------- 13 view */}
+                            <Swiper
+                              loop={false}
+                              showsPagination={false}
+                              index={0}>
+                              <View>
+                                <MainTitle subtitle='DIAGNÓSTICO'/>
+                                <Image source={require('./assets/img/12.png')}/>
+                              </View>
+
+                              {/*--------------- 14 view */}
+                              <Swiper
+                                loop={false}
+                                showsPagination={false}
+                                index={0}>
+                                <View>
+                                  <MainTitle subtitle='DIAGNÓSTICO'/>
+                                  <Image source={require('./assets/img/13.png')}/>
+                                </View>
+
+                                {/*--------------- 15 view */}
+                                <Swiper
+                                  loop={false}
+                                  showsPagination={false}
+                                  index={0}>
+                                  <View>
+                                    <MainTitle subtitle='ESTUDIOS DE GABINETE'/>
+                                    <Image source={require('./assets/img/14.png')}/>
+                                  </View>
+
+                                  {/*--------------- 16 view */}
+                                  <Swiper
+                                    loop={false}
+                                    showsPagination={false}
+                                    index={0}>
+                                    <View>
+                                      <MainTitle subtitle='ESTUDIOS DE GABINETE'/>
+                                      <Image source={require('./assets/img/15.png')}/>
+                                    </View>
+
+                                    {/*--------------- 17 view */}
+                                    <Swiper
+                                      loop={false}
+                                      showsPagination={false}
+                                      index={0}>
+                                      <View>
+                                        <MainTitle subtitle='ESTUDIOS DE GABINETE'/>
+                                        <Image source={require('./assets/img/16.png')}/>
+                                      </View>
+
+                                      {/*--------------- 18 view */}
+                                      <Swiper
+                                        loop={false}
+                                        showsPagination={false}
+                                        index={0}>
+                                        <View>
+                                          <MainTitle subtitle='MEDICAMENTOS'/>
+                                          <Image source={require('./assets/img/17.png')}/>
+                                        </View>
+
+                                        {/*--------------- 19 view */}
+                                        <Swiper
+                                          loop={false}
+                                          showsPagination={false}
+                                          index={0}>
+                                          <View>
+                                            <MainTitle subtitle='MEDICAMENTOS'/>
+                                            <Image source={require('./assets/img/18.png')}/>
+                                          </View>
+
+                                          {/*--------------- 20 view */}
+                                          <Swiper
+                                            loop={false}
+                                            showsPagination={false}
+                                            index={0}>
+                                            <View>
+                                              <MainTitle subtitle='MEDICAMENTOS'/>
+                                              <Image source={require('./assets/img/19.png')}/>
+                                            </View>
+
+                                          </Swiper>
+
+                                        </Swiper>
+
+                                      </Swiper>
+
+                                    </Swiper>
+
+                                  </Swiper>
+
+                                </Swiper>
+
+                              </Swiper>
+
+                            </Swiper>
+
+                          </Swiper>
+
+                        </Swiper>
+
+                      </Swiper>
+
+                    </Swiper>
+
+                  </Swiper>
+
+                </Swiper>
+
+              </Swiper>
+
+            </Swiper>
+
+          </Swiper>
+
+        </Swiper>
+
+      </Swiper>
+
+    </Swiper>
+
+  </Swiper>
 );
 
 const HomeTest = () => (
